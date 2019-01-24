@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {font-size:50px; font-family: 'Bungee', cursive;}
+
+header {
+    position:relative;
+  height: 100vh;
+  background: #56ccf2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to top,
+      #2f80ed,
+      #56ccf2
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to top,
+      #2f80ed,
+      #56ccf2
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 1;
+    overflow:hidden;
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    
+    z-index: -1;
+    opacity: 0;
+    animation: backgroundgrade 3s ease 1s normal forwards;
+  }
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 14px 16px;
+  float: left;
+  color: #fff;
+}
+nav {
+ display: block;
+  clear: both;
+  overflow: hidden;
+  position:fixed;
+  width:100%;
+
+}
+nav::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  z-index: -1;
+  opacity: 0;
+  animation: backgroundgrade 2s ease 4s normal forwards;
+}
+nav ul {
+  float: right;
+  margin-top: 20px;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  padding: 14px 16px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: lowercase;
+  font-size: 20px;
+}
+.hero {
+  display: block;
+  height: 100%;
+  
+}
+.hero svg {
+    position:absolute;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+}
+.heroCopy {
+  text-align:left;
+  margin: 200px 0;
+  display: block;
+  float: right;
+  width: 600px;
+  max-width: 100%;
+  color: #fff;
+}
+.heroCopy h1 {
+  text-transform: lowercase;
+
+  color: #fff;
+  font-size: 74px;
+  line-height: 100px;
+}
+.heroCopy p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.cls-1 {
+  stroke-dasharray: 700vh;
+  stroke-dashoffset: 700vh;
+  animation: dash 7s linear normal forwards;
+}
+
+@keyframes dash {
+  0% {stroke-dashoffset: 700vh;}
+  70%{stroke-dashoffset: 0;}
+  80% {fill:rgba(0, 0, 0, .0); stroke-dashoffset: 0;}
+  100% {fill:rgba(0, 0, 0, .2);}
+  
+}
+
+@keyframes backgroundgrade {
+    from { opacity:0;
+      background-attachment: fixed;}
+    to {
+        opacity:1;
+        background-attachment: fixed;
+        }
+
+}

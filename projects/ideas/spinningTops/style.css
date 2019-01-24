@@ -1,0 +1,46 @@
+div {height:300px; width:300px; border: 1px solid #000;margin:50px; box-sizing: border-box;}
+.circle{background-color:#fff; width:50px; height:1250px; border-radius:50%; position:relative; top:-50px; border:none;} 
+section{width:100%;}
+body>#top{animation: spin 11s linear infinite both;}
+body>#bottom{animation: spin 23s linear infinite alternate both;}
+@keyframes spin {
+    0% { 
+        transform:translateX(100%) rotate(187654deg);
+    }
+    30%{
+        width:50px;
+        height:200px;
+        background-color:rgba(255, 0, 0, .8);
+        border: 30px solid rgba(255, 0, 0, .4);
+        outline:10px solid rgba(255, 0, 0, .2);
+        border-radius:25px;
+        transform:translateX(300%) rotate(-187654deg);
+
+    }
+    50%{
+        width:20px;
+        height:150px;
+        background-color:rgba(168, 240, 67, 0.8);
+        border: 50px solid rgba(0, 0, 255, .4);
+        outline: 20px solid rgba(0, 0, 255, .2);
+        border-radius:50px;
+        transform:translateX(-300%) rotate(187654deg);
+    }
+
+    90% { 
+        width:900px;
+        height:900px;
+        background-color:rgba(0, 115, 255, 0.8);
+        border: 70px solid rgba(10, 188, 228, 0.4);
+        outline: 150px solid rgba(10, 188, 228, 0.2);
+        box-shadow: 0 0 100px 100px rgba(10, 188, 228, 0.2);
+        border-radius:50%;
+        transform:translateX(300%) rotate(-187654deg);
+    }
+
+    100% {
+        width:10px;
+        height:10px;
+        transform:translateX(-100%) rotate(187654deg);
+    }
+}
