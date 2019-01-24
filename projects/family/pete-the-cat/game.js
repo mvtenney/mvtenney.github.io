@@ -24,6 +24,7 @@ function addItems() {
   createItem(650, 250, 'teal-button');
   createItem(225, 200, 'red-button');
   createItem(125, 50, 'blue-button');
+  createItem(350, 250, 'teal-button');
   //createItem(375, 100, 'poison');
   //createItem(370,500,'poison');
   //createItem(100, 375, 'poison');
