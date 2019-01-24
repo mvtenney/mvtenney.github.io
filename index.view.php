@@ -20,18 +20,7 @@
     
     <main>
         <h1>Welcome!</h1>
-        <p><?php getWelcomeText($referrer);?></p>
-        <ul>
-            <?php foreach ($names as $name) : ?>
-            <li><?=$name;?></li>
-            <?php endforeach; ?>
-        </ul>
-
-        <ul>
-            <?php foreach ($person as $trait => $val) : ?>
-            <li><strong><?=$trait?></strong>: <?=$val?></li>
-            <?php endforeach; ?>
-        </ul>
+        <h2>This is not my portfolio, only a repository of things that I directly link to.</h2>
     </main>
     
     <footer>
