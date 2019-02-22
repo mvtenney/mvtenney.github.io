@@ -35,7 +35,7 @@ function addPlatforms() {
   platforms.create(565, 275, 'platform2'); //cloud
   platforms.create(250, 525, 'skateboard'); //skateboard
   platforms.create(25, 350, 'platform'); //grass
-  platforms.create(400, 350, 'platform'); //grass
+  platforms.create(400, 375, 'platform'); //grass
   platforms.setAll('body.immovable', true);
 }
 
@@ -107,14 +107,14 @@ window.onload = function () {
 
     cursors = game.input.keyboard.createCursorKeys();
     jumpButton = game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
-    text = game.add.text(16, 16, "SCORE: " + currentScore, { font: "bold 24px Schoolbell", fill: "#D84835" });
+    text = game.add.text(16, 16, "My Score: " + currentScore, { font: "bold 24px Schoolbell", fill: "#D84835" });
     winningMessage = game.add.text(game.world.centerX, 275, "", { font: "bold 60px Schoolbell", fill: "#D84835" });
     winningMessage.anchor.setTo(0.5, 1);
   }
 
   // while the game is running
   function update() {
-    text.text = "SCORE: " + currentScore;
+    text.text = "My Score: " + currentScore;
     game.physics.arcade.collide(player, platforms);
     game.physics.arcade.overlap(player, items, itemHandler);
     game.physics.arcade.overlap(player, badges, badgeHandler);
