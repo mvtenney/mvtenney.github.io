@@ -20,7 +20,7 @@ function addItems() {
   createItem(675, 450, 'teal-button');
   createItem(165, 160, 'blue-button');
   createItem(450, 300, 'blue-button');
-  createItem(415, 100, 'green-button');
+  createItem(375, 75, 'green-button');
   createItem(140, 320, 'green-button');
   createItem(365, 430, 'red-button');
   createItem(600, 75, 'red-button');
@@ -31,7 +31,7 @@ function addItems() {
 function addPlatforms() {
   platforms = game.add.physicsGroup();
   platforms.create(100, 200, 'platform2'); //cloud
-  platforms.create(350, 150, 'platform2'); //cloud
+  platforms.create(350, 115, 'platform2'); //cloud
   platforms.create(565, 275, 'platform2'); //cloud
   platforms.create(250, 525, 'skateboard'); //skateboard
   platforms.create(25, 350, 'platform'); //grass
