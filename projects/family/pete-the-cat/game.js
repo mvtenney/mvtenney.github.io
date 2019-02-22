@@ -90,7 +90,7 @@ window.onload = function () {
     game.load.spritesheet('red-button', 'red-button.png', 36, 44);
     game.load.spritesheet('green-button', 'green-button.png', 36, 44);
     game.load.spritesheet('teal-button', 'teal-button.png', 36, 44);
-    game.load.spritesheet('badge', 'badge.png', 36, 44);
+    game.load.spritesheet('badge', 'badge.png', 44, 44);
   }
 
   // initial game set up
