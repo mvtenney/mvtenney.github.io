@@ -36,7 +36,7 @@ function addPlatforms() {
   // platforms.create(300, 490, 'car' );
   platforms.create(25, 350, 'platform'); //grass
   platforms.create(400, 350, 'platform'); //grass
-  // platforms.create(275, 450, 'platform'); //grass
+  platforms.create(275, 450, 'platform'); //grass
   platforms.setAll('body.immovable', true);
 }
 
