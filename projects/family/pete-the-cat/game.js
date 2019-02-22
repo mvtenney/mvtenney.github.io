@@ -15,16 +15,16 @@ var winningScore = 100;
 // add collectable items to the game
 function addItems() {
   items = game.add.physicsGroup();
-  createItem(375, 400, 'blue-button');
-  createItem(575, 500, 'green-button');
-  createItem(225, 500, 'teal-button');
+  createItem(50, 225, 'teal-button');
+  createItem(275, 250, 'teal-button');
+  createItem(675, 450, 'teal-button');
+  createItem(165, 160, 'blue-button');
+  createItem(450, 300, 'blue-button');
+  createItem(415, 100, 'green-button');
+  createItem(140, 320, 'green-button');
   createItem(100, 250, 'red-button');
-  createItem(575, 150, 'green-button');
-  createItem(525, 300, 'red-button');
-  createItem(650, 250, 'teal-button');
-  createItem(225, 200, 'red-button');
-  createItem(125, 50, 'blue-button');
-  createItem(350, 250, 'teal-button');
+  createItem(100, 250, 'red-button');
+  createItem(100, 250, 'red-button');
 }
 
 // add platforms to the game
@@ -50,7 +50,7 @@ function createItem(left, top, image) {
 // create the winning badge and add to screen
 function createBadge() {
   badges = game.add.physicsGroup();
-  var badge = badges.create(750, 400, 'badge');
+  var badge = badges.create(350, 250, 'badge');
   badge.animations.add('spin');
   badge.animations.play('spin', 10, true);
 }
@@ -60,11 +60,7 @@ function itemHandler(player, item) {
   item.kill();
   if (item.key === 'blue-button' || 'red-button' || 'green-button' || 'teal-button') {
     currentScore = currentScore + 10;
-  } else if (item.key === 'poison') {
-    currentScore = currentScore - 25;
-  } else if (item.key === 'star') {
-    currentScore = currentScore + 25;
-  }
+  } 
   if (currentScore === winningScore) {
     createBadge();
   }
