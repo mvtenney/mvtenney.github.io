@@ -30,7 +30,7 @@ function addItems() {
 // add platforms to the game
 function addPlatforms() {
   platforms = game.add.physicsGroup();
-  platforms.create(200, 100, 'platform2'); //cloud
+  platforms.create(100, 200, 'platform2'); //cloud
   // platforms.create(400, 260, 'platform2'); //cloud
   // platforms.create(400, 260, 'platform2'); //cloud
   // //platforms.create(300, 490, 'car' );
